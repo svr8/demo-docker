@@ -1,0 +1,9 @@
+# TinkerLab
+version: '3'
+services:
+  node_app: 
+    image: svr8/docker-demo
+    build: .
+    command: "node app/app.js"
+    ports:
+      - "80:3000"
